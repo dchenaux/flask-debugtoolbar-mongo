@@ -43,7 +43,7 @@ First, you need to get the package. Install it with pip:
 
 Somewhere after you've set ``app.debug = True`` and before ``app.run``, you need
 to specify the ``flask_debugtoolbar`` panels that you want to use and include
-``'flask_debugtoolbar_mongo.panels.MongoDebugPanel'`` in that list.
+``'flask_debugtoolbar_mongo.panel.MongoDebugPanel'`` in that list.
 
 For example, here's a small flask app with the panel installed and with line
 profiling enabled for the `hello_world`::
