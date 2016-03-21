@@ -1,8 +1,15 @@
+import sys
 import functools
 import time
 import inspect
 import os
-import SocketServer
+
+is_python3 = (sys.version_info[0] == 3)
+
+if is_python3:
+    import socketserver
+else:
+    import SocketServer
 
 import flask
 from flask import current_app
